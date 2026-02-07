@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using SS3D.Systems.Health.Data;
+using System.Collections.Generic;
 using System.Linq;
 using System;
 
@@ -46,13 +47,16 @@ namespace SS3D.Systems.Health
         /// </summary>
         public DamagesContainer Damages = new();
 
+        public BodyLayerData BodyLayerData;
+
 		/// <summary>
 		/// TODO : Put default damage suceptibility and resistance into a scriptable object and replace those lists with "damage * modifier".
 		/// They should be empty most of the time as they are modifiers. This will improve memory usage.
 		/// </summary>
 		/// <param name="bodyPart">The bodypart this bodylayer belongs to.</param>
-		public BodyLayer(BodyPart bodyPart)
+		public BodyLayer(BodyPart bodyPart, BodyLayerData data = null)
 		{
+            BodyLayerData = data;
             SetDamagesContainer();
 			BodyPart = bodyPart;    
 		}

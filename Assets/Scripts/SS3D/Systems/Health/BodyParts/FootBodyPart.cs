@@ -1,4 +1,6 @@
-﻿namespace SS3D.Systems.Health
+﻿using SS3D.Systems.Health.Data;
+
+namespace SS3D.Systems.Health
 {
 	/// <summary>
 	/// Feet are necessary to walk, depending on how damaged they are, the player will slow down.
@@ -6,7 +8,9 @@
 	/// a player can walk, as well as determining limping animation and stuff.
 	/// </summary>
 	public class FootBodyPart : BodyPart, IWalkEnabler
-	{
+    {
+        public BodyLayerData BoneLayerData;
+        
 		public float GetSpeedContribution()
 		{
 			return 1-RelativeDamage;
@@ -15,7 +19,7 @@
 		protected override void AddInitialLayers()
 		{
 			TryAddBodyLayer(new MuscleLayer(this));
-			TryAddBodyLayer(new BoneLayer(this));
+			TryAddBodyLayer(new BoneLayer(this, BoneLayerData));
 			TryAddBodyLayer(new CirculatoryLayer(this,5f));
 			TryAddBodyLayer(new NerveLayer(this));
 			InvokeOnBodyPartLayerAdded();

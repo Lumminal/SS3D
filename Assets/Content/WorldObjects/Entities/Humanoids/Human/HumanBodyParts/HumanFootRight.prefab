@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8338643013850178505}
   - component: {fileID: 5996738223769901781}
   - component: {fileID: 7610292138979804179}
+  - component: {fileID: 5587703605701374087}
   m_Layer: 10
   m_Name: HumanFootRight
   m_TagString: Untagged
@@ -455,6 +456,7 @@ MonoBehaviour:
   _bodyCollider: {fileID: 0}
   HealthController: {fileID: 0}
   _bodyPartVolume: 1300
+  BoneLayerData: {fileID: 11400000, guid: 364c44afe0ec57249b63efc285262b49, type: 2}
 --- !u!114 &5996738223769901781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,5 +484,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a19f823e20acab740ba5150747863eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clothType: 0
+--- !u!114 &5587703605701374087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632297082311541152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00534faac6488c47893490f2bf4c5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

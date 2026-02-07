@@ -1,4 +1,5 @@
 ﻿using System;
+// ReSharper disable All
 
 namespace SS3D.Systems.Health
 {

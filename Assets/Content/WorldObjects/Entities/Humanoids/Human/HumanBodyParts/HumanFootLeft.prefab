@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 583132518431860780}
   - component: {fileID: 7155506955987011765}
   - component: {fileID: 6503579652515287345}
+  - component: {fileID: 3846889472343399846}
   m_Layer: 10
   m_Name: HumanFootLeft
   m_TagString: Untagged
@@ -424,6 +425,7 @@ MonoBehaviour:
   _bodyCollider: {fileID: 0}
   HealthController: {fileID: 0}
   _bodyPartVolume: 1300
+  BoneLayerData: {fileID: 11400000, guid: 364c44afe0ec57249b63efc285262b49, type: 2}
 --- !u!114 &7155506955987011765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19f823e20acab740ba5150747863eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clothType: 0
 --- !u!114 &6503579652515287345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +456,18 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 6603268689893490928}
   _bodyPart: {fileID: 583132518431860780}
   isBleeding: 0
+--- !u!114 &3846889472343399846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958959792659314810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00534faac6488c47893490f2bf4c5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8783848087632679008
 GameObject:
   m_ObjectHideFlags: 0
